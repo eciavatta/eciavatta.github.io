@@ -1,0 +1,18 @@
+- name: About me
+  link: /about/
+  color: red
+- name: Projects
+  link: /projects/
+  color: orange
+- name: Skills
+  link: /skills/
+  color: yellow
+- name: Hobbies
+  link: /hobbies/
+  color: green
+- name: Blog
+  link: /blog/
+  color: blue
+- name: Contact me
+  link: /contacts/
+  color: indigo

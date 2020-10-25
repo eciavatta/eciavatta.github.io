@@ -1,0 +1,14 @@
+    <footer class="page-footer">
+      <ul class="social-buttons">
+          {% for item in site.data.social_media %}
+          <li>
+            <a href="{{ item.url }}">
+              {{ item.icon }}
+            </a>
+          </li>      
+        {% endfor %}
+        </ul>
+    </div>
+  </div>
+</body>
+</html>

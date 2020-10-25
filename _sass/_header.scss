@@ -1,0 +1,71 @@
+@import "colors";
+
+.page-header {
+  display: flex;
+  align-items: center;
+
+  .logo {
+    flex: 1;
+
+    h1 {
+      font-size: 1.3em;
+      font-weight: 500;
+
+      a {
+        color: $text-color;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .navbar {
+    display: none;
+
+    .navigation {
+      list-style: none;
+      padding: 0;
+
+      li {
+        display: inline-block;
+        margin-left: 10px;
+
+        a {
+          position: relative;
+          text-decoration: none;
+          font-weight: 500;
+          font-size: 0.9em;
+          border-radius: 5px;
+          padding: 2px;
+        }
+
+        a::after {
+          content: "";
+          display: block;
+          left: 0;
+          position: absolute;
+          transform: scaleX(0);
+          transform-origin: center left;
+          transition-duration: 0.4s;
+          transition-property: transform;
+          width: 100%;
+          bottom: 0;
+          height: 2px;
+        }
+
+        a:hover::after {
+          transform: scaleX(1);
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .logo {
+      margin: 20px 0;
+    }
+
+    .navbar {
+      display: block !important;
+    }
+  }
+}

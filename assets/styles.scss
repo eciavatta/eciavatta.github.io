@@ -1,0 +1,222 @@
+---
+---
+@import "header";
+@import "footer";
+@import "colors";
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap");
+
+body {
+  font-family: "Fira Code", monospace;
+  font-size: 90%;
+  margin: 0;
+  height: 100vh;
+  color: $text-color;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.page-container {
+  margin: 0 20px;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content {
+  flex: 1;
+
+
+  .content-header {
+    display: flex;
+  }
+
+  .content-title {
+    flex: 1;
+  }
+
+
+
+
+  p {
+    text-align: justify;
+    margin: 10px 0;
+  }
+
+  a {
+    color: $red;
+    animation-name: rainbow;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    font-weight: 500;
+    text-decoration: none;
+    position: relative;
+    background-color: #fff !important;
+    padding: 0 1px;
+  }
+
+  a::after {
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 2px;
+    background-color: $red;
+    animation-name: rainbow;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+}
+
+.home-page {
+  display: flex;
+  align-items: center;
+
+  .home-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .photo {
+    border-radius: 50px;
+
+    img {
+      width: 200px;
+      border-radius: 200px;
+    }
+  }
+
+  h2 {
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+
+  h3 {
+    font-weight: 400;
+    font-size: 1.3em;
+    margin-top: 30px;
+
+    .code {
+      width: auto;
+      background-color: rgb(240, 242, 244);
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+  }
+
+  h4 {
+    font-weight: 400;
+    margin-top: 10px;
+  }
+
+  h5 {
+    font-weight: 400;
+    font-size: 1em;
+    margin: 10px;
+  }
+
+
+}
+
+.active::after {
+  transform: scaleX(1) !important;
+}
+
+.red {
+  color: $red;
+
+  &::after {
+    background-color: $red !important;
+  }
+}
+
+.orange {
+  color: $orange;
+
+  &::after {
+    background-color: $orange !important;
+  }
+}
+
+.yellow {
+  color: $yellow;
+
+  &::after {
+    background-color: $yellow !important;
+  }
+}
+
+.green {
+  color: $green;
+
+  &::after {
+    background-color: $green !important;
+  }
+}
+
+.blue {
+  color: $blue;
+
+  &::after {
+    background-color: $blue !important;
+  }
+}
+
+.indigo {
+  color: $indigo;
+
+  &::after {
+    background-color: $indigo !important;
+  }
+}
+
+@keyframes rainbow {
+  0% {
+    color: $red;
+    background-color: $red;
+    fill: $red;
+  }
+  10% {
+    color: $orange;
+    background-color: $orange;
+    fill: $orange;
+  }
+  30% {
+    color: $yellow;
+    background-color: $yellow;
+    fill: $yellow;
+  }
+  50% {
+    color: $green;
+    background-color: $green;
+    fill: $green;
+  }
+  70% {
+    color: $blue;
+    background-color: $blue;
+    fill: $blue;
+  }
+  90% {
+    color: $indigo;
+    background-color: $indigo;
+    fill: $indigo;
+  }
+  100% {
+    color: $red;
+    background-color: $red;
+    fill: $red;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-container {
+    width: 768px;
+    margin: 0 auto;
+  }
+}

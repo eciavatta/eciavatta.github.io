@@ -1,0 +1,33 @@
+@import "colors";
+
+.page-footer {
+  text-align: center;
+
+
+  .social-buttons {
+    list-style: none;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      margin: 0 5px;
+
+      svg {
+        width: 24px;
+        height: 24px;
+        fill: $red;
+
+        animation-name: rainbow;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        background: #fff !important;
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    margin: 40px 0;
+  }
+
+}
