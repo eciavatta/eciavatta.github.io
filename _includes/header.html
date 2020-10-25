@@ -40,7 +40,7 @@
         </div>
 
         <nav class="navbar">
-          <ul class="navigation">
+          <ul class="navigation" id="main-menu">
             {% for item in site.data.navigation %}
             <li>
               <a href="{{ item.link }}" class="{{ item.color }}{% if page.url == item.link %} active{% endif %}">
@@ -49,5 +49,13 @@
             </li>
           {% endfor %}
           </ul>
+
+          <button class="hamburger hamburger--collapse" type="button" id="menu-button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
         </nav>
+
+
       </header>

@@ -3,6 +3,12 @@
 .page-header {
   display: flex;
   align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  padding: 8px 20px;
+  background-color: #fff;
+  z-index: 10;
 
   .logo {
     flex: 1;
@@ -19,15 +25,43 @@
   }
 
   .navbar {
-    display: none;
+    .hamburger {
+      padding: 0;
+      width: 32px;
+    }
+
+    .hamburger-inner,
+    .hamburger-inner::before,
+    .hamburger-inner::after,
+    .hamburger.is-active .hamburger-inner,
+    .hamburger.is-active .hamburger-inner::before,
+    .hamburger.is-active .hamburger-inner::after {
+      animation-name: rainbow;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      width: 32px;
+    }
 
     .navigation {
+      display: none;
       list-style: none;
       padding: 0;
 
+      position: fixed;
+      background-color: #fff;
+      top: 50px;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      height: 100%;
+
       li {
-        display: inline-block;
+        // display: inline-block;
         margin-left: 10px;
+        text-align: center;
+        margin: 20px 0;
+        font-size: 1.5em;
 
         a {
           position: relative;
@@ -56,6 +90,10 @@
           transform: scaleX(1);
         }
       }
+
+      &.is-active {
+        display: block;
+      }
     }
   }
 
@@ -66,6 +104,10 @@
 
     .navbar {
       display: block !important;
+
+      .hamburger {
+        display: none;
+      }
     }
   }
 }
