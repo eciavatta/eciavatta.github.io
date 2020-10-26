@@ -2,13 +2,18 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Emiliano Ciavatta</title>
-    <meta name="description" content="My personal website" />
-    <meta property="og:title" content="Emiliano Ciavatta" />
-    <meta property="og:image" content="{{ user.avatar_url }}" />
-    <meta property="og:description" content="My personal website" />
+    {% feed_meta %}
+    {% seo %}
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ "/assets/img/icons/apple-touch-icon.png" | relative_url }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ "/assets/img/icons/favicon-32x32.png" | relative_url }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ "/assets/img/icons/favicon-16x16.png" | relative_url }}">
+    <link rel="manifest" href="{{ "/assets/img/icons/site.webmanifest" | relative_url }}">
+    <link rel="mask-icon" href="{{ "/assets/img/icons/safari-pinned-tab.svg" | relative_url }}" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="{{ "/assets/img/icons/browserconfig.xml" | relative_url }}">
+    <meta name="theme-color" content="#ffffff">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="{{ "/assets/styles.css" | relative_url }}?v={{ "now" | date: "%s" }}" rel="stylesheet" type="text/css">
+    <link href="{{ "/assets/css/styles.css" | relative_url }}?v={{ "now" | date: "%s" }}" rel="stylesheet" type="text/css">
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script src="{{ "/assets/js/script.js" | relative_url }}?v={{ "now" | date: "%s" }}"></script>
   </head>
