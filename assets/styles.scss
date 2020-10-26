@@ -29,7 +29,6 @@ body {
 
 .page-content {
   flex: 1;
-  margin-top: 70px;
 
   .main-image {
     width: 100%;
@@ -121,10 +120,24 @@ body {
   transform: scaleX(1) !important;
 }
 
+// mobile + tablet
+@media screen and (max-width: 768px) {
+  .page-container {
+    .page-content {
+      margin-top: 70px;
+    }
+  }
+}
+
+// desktop
 @media screen and (min-width: 768px) {
   .page-container {
     width: 768px;
     margin: 0 auto;
+
+    .page-content {
+      margin-top: 30px;
+    }
   }
 }
 

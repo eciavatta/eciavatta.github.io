@@ -7,9 +7,7 @@ window.onload = function () {
     new Typed('.typed', options);
 
     var menuButton = document.getElementById("menu-button");
-    var menu = document.getElementById("main-menu"); 
-
-    console.log(menuButton)
+    var menu = document.getElementById("main-menu");
 
     menuButton.onclick = function () {
         if (menu.classList.contains("is-active")) {
@@ -20,5 +18,4 @@ window.onload = function () {
             menuButton.classList.add("is-active")
         }
     }
-    
 }
