@@ -1,22 +1,23 @@
 ---
 layout: page
 title: Hobbies
+image: hobbies.png
 ---
 
-Oltre l'informatica e la cybersicurezza, ho diverse passioni.
+Besides computing and cybersecurity, I have several passions.
 
-Mi piace la fotografia, anche se è una passione che ho scoperto da poco. Ho partecipato a qualche contest fotografico e ho ottenuto ottimi risultati. Ogni tanto pubblico quache mio scatto su [Flickr](https://www.flickr.com/photos/eciavatta/).
+I like photography, even if it is a passion that I recently discovered. I took part in some photographic contests and got excellent results. Sometimes I publish some of my shots on [Flickr](https://www.flickr.com/photos/eciavatta/).
 
-Ho la curiosità di sapere come funzionano le cose, mi piace smontarle per capire come sono fatte. Soprattutto gli oggetti e gli strumenti elettronici. L'elettronica, infatti, è un'altra mia passione, in cui mi diletto nel tempo libero.
+I am curious to know how things work, I like to take them apart to understand how they are made. Especially electronic objects and tools. In fact, electronics is another passion of mine, in which I delight in my free time.
 
-Mi piace la montagna, vado spesso a camminare e a fare lunghi percorsi.
+I like the mountains, I often go walking and making long distances.
 
-Sono appassionato di giornalismo, sia italiano, sia straniero. Non sono molto portato a scrivere, ma mi piace vedere come gli eventi vengono trasformati in notizie, e mi piace seguire la narrazione dell'attualità.
+I am passionate about journalism, both Italian and foreign. I'm not very good at writing, but I like to see how events are transformed into news, and I like to follow the narrative of current events.
 
-Mi piace anche la politica, partecipo a tavoli di discussione per migliorare la mia città, e sono iscritto ad un partito politico.
+I also like politics, I participate in discussion tables to improve my city, and I am a member of a political party.
 
-Ci sono periodi in cui passo diverso tempo a giocare a videogiochi, mi divertono gli sparatutto.
+There are times when I spend a lot of time playing video games, I enjoy shooters.
 
-Mi piace la musica classica e l'opera.
+I like classical music and opera.
 
-Mi piacciono i treni.
+I like trains.

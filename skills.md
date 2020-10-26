@@ -3,4 +3,6 @@ layout: page
 title: Skills
 ---
 
-No skills
+`// TODO`
+
+`No skills ¯\_(ツ)_/¯`

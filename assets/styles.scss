@@ -43,7 +43,6 @@ body {
   a {
     color: $red;
     font-weight: 500;
-    text-decoration: none;
     position: relative;
     padding: 0 1px;
     @include animate("color");
@@ -59,6 +58,12 @@ body {
     height: 2px;
     background-color: $red;
     @include animate("background");
+  }
+
+  .page-title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: 300;
   }
 }
 

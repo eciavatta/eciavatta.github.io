@@ -1,8 +1,9 @@
 ---
 layout: page
 title: Contact me
+image: contacts.png
 ---
 
-Attualmente non sto cercando lavoro, preferisco prima dedicare il mio tempo per finire l'università. Puoi sempre contattarmi per chiedermi informazioni di qualsiasi tipo all'indirizzo ciavatta.emiliano[at]gmail.com, oppure scrivermi su Telegram a [at]eciavatta.
+I am not currently looking for work, I prefer to dedicate my time to finish university first. You can always contact me to ask me for information of any kind at ciavatta.emiliano[at]gmail.com, or write me on Telegram at [at]eciavatta.
 
-Sotto trovi anche tutti i collegamenti ai miei profili social.
+At the bottom of the page you will also find all the links to my social profiles.

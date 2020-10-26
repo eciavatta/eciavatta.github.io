@@ -3,4 +3,4 @@ layout: page
 title: Blog
 ---
 
-Ancora non è presente nessun post :/
+There is no post yet :/
