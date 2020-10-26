@@ -1,8 +1,9 @@
 @import "colors";
+@import "effects";
 
 .page-footer {
   text-align: center;
-
+  margin: 20px 0;
 
   .social-buttons {
     list-style: none;
@@ -16,12 +17,7 @@
         width: 24px;
         height: 24px;
         fill: $red;
-
-        animation-name: rainbow;
-        animation-duration: 10s;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-        background: #fff !important;
+        @include animate("fill");
       }
     }
   }
@@ -29,5 +25,4 @@
   @media screen and (min-width: 768px) {
     margin: 40px 0;
   }
-
 }

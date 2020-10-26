@@ -1,7 +1,58 @@
 $text-color: rgb(46, 47, 61);
+$code-color: rgb(240, 242, 244);
+$background-color: rgb(255, 255, 255);
+
 $red: #d04b36;
 $orange: #e36511;
 $yellow: #ffba00;
 $green: #00b180;
 $blue: #147aab;
 $indigo: #675997;
+
+.red {
+  color: $red;
+
+  &::after {
+    background-color: $red !important;
+  }
+}
+
+.orange {
+  color: $orange;
+
+  &::after {
+    background-color: $orange !important;
+  }
+}
+
+.yellow {
+  color: $yellow;
+
+  &::after {
+    background-color: $yellow !important;
+  }
+}
+
+.green {
+  color: $green;
+
+  &::after {
+    background-color: $green !important;
+  }
+}
+
+.blue {
+  color: $blue;
+
+  &::after {
+    background-color: $blue !important;
+  }
+}
+
+.indigo {
+  color: $indigo;
+
+  &::after {
+    background-color: $indigo !important;
+  }
+}

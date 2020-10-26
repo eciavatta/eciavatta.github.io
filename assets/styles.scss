@@ -1,10 +1,11 @@
 ---
 ---
+
 @import "header";
 @import "footer";
 @import "colors";
+@import "effects";
 @import "hamburgers";
-
 
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap");
 
@@ -14,7 +15,7 @@ body {
   margin: 0;
   height: 100vh;
   color: $text-color;
-  background-color: #fff;
+  background-color: $background-color;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -22,7 +23,6 @@ body {
 .page-container {
   margin: 0 20px;
   height: 100vh;
-
   display: flex;
   flex-direction: column;
 }
@@ -31,17 +31,9 @@ body {
   flex: 1;
   margin-top: 70px;
 
-
-  .content-header {
-    display: flex;
+  .main-image {
+    width: 100%;
   }
-
-  .content-title {
-    flex: 1;
-  }
-
-
-
 
   p {
     text-align: justify;
@@ -50,15 +42,11 @@ body {
 
   a {
     color: $red;
-    animation-name: rainbow;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
     font-weight: 500;
     text-decoration: none;
     position: relative;
-    background-color: #fff !important;
     padding: 0 1px;
+    @include animate("color");
   }
 
   a::after {
@@ -70,10 +58,7 @@ body {
     bottom: 0;
     height: 2px;
     background-color: $red;
-    animation-name: rainbow;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    @include animate("background");
   }
 }
 
@@ -92,6 +77,7 @@ body {
     img {
       width: 200px;
       border-radius: 200px;
+      box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.25);
     }
   }
 
@@ -107,7 +93,7 @@ body {
 
     .code {
       width: auto;
-      background-color: rgb(240, 242, 244);
+      background-color: $code-color;
       padding: 5px 10px;
       border-radius: 5px;
     }
@@ -124,98 +110,10 @@ body {
     font-size: 1em;
     margin: 10px;
   }
-
-
 }
 
 .active::after {
   transform: scaleX(1) !important;
-}
-
-.red {
-  color: $red;
-
-  &::after {
-    background-color: $red !important;
-  }
-}
-
-.orange {
-  color: $orange;
-
-  &::after {
-    background-color: $orange !important;
-  }
-}
-
-.yellow {
-  color: $yellow;
-
-  &::after {
-    background-color: $yellow !important;
-  }
-}
-
-.green {
-  color: $green;
-
-  &::after {
-    background-color: $green !important;
-  }
-}
-
-.blue {
-  color: $blue;
-
-  &::after {
-    background-color: $blue !important;
-  }
-}
-
-.indigo {
-  color: $indigo;
-
-  &::after {
-    background-color: $indigo !important;
-  }
-}
-
-@keyframes rainbow {
-  0% {
-    color: $red;
-    background-color: $red;
-    fill: $red;
-  }
-  10% {
-    color: $orange;
-    background-color: $orange;
-    fill: $orange;
-  }
-  30% {
-    color: $yellow;
-    background-color: $yellow;
-    fill: $yellow;
-  }
-  50% {
-    color: $green;
-    background-color: $green;
-    fill: $green;
-  }
-  70% {
-    color: $blue;
-    background-color: $blue;
-    fill: $blue;
-  }
-  90% {
-    color: $indigo;
-    background-color: $indigo;
-    fill: $indigo;
-  }
-  100% {
-    color: $red;
-    background-color: $red;
-    fill: $red;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -223,4 +121,13 @@ body {
     width: 768px;
     margin: 0 auto;
   }
+}
+
+button {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: $text-color;
 }

@@ -1,0 +1,80 @@
+@import "colors";
+
+@mixin animate($type) {
+  animation-name: rainbow-#{$type};
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rainbow-color {
+  0% {
+    color: $red;
+  }
+  10% {
+    color: $orange;
+  }
+  30% {
+    color: $yellow;
+  }
+  50% {
+    color: $green;
+  }
+  70% {
+    color: $blue;
+  }
+  90% {
+    color: $indigo;
+  }
+  100% {
+    color: $red;
+  }
+}
+
+@keyframes rainbow-background {
+  0% {
+    background-color: $red;
+  }
+  10% {
+    background-color: $orange;
+  }
+  30% {
+    background-color: $yellow;
+  }
+  50% {
+    background-color: $green;
+  }
+  70% {
+    background-color: $blue;
+  }
+  90% {
+    background-color: $indigo;
+  }
+  100% {
+    background-color: $red;
+  }
+}
+
+@keyframes rainbow-fill {
+  0% {
+    fill: $red;
+  }
+  10% {
+    fill: $orange;
+  }
+  30% {
+    fill: $yellow;
+  }
+  50% {
+    fill: $green;
+  }
+  70% {
+    fill: $blue;
+  }
+  90% {
+    fill: $indigo;
+  }
+  100% {
+    fill: $red;
+  }
+}

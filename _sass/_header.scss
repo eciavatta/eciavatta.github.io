@@ -1,14 +1,11 @@
 @import "colors";
+@import "effects";
 
 .page-header {
   display: flex;
   align-items: center;
-  position: fixed;
-  left: 0;
-  right: 0;
-  padding: 8px 20px;
-  background-color: #fff;
-  z-index: 10;
+  height: 50px;
+  padding: 0 15px;
 
   .logo {
     flex: 1;
@@ -16,11 +13,6 @@
     h1 {
       font-size: 1.3em;
       font-weight: 500;
-
-      a {
-        color: $text-color;
-        text-decoration: none;
-      }
     }
   }
 
@@ -36,10 +28,7 @@
     .hamburger.is-active .hamburger-inner,
     .hamburger.is-active .hamburger-inner::before,
     .hamburger.is-active .hamburger-inner::after {
-      animation-name: rainbow;
-      animation-duration: 10s;
-      animation-iteration-count: infinite;
-      animation-timing-function: linear;
+      @include animate("background");
       width: 32px;
     }
 
@@ -49,16 +38,14 @@
       padding: 0;
 
       position: fixed;
-      background-color: #fff;
-      top: 50px;
+      background-color: $background-color;
+      top: 40px;
       left: 0;
       right: 0;
       z-index: 10;
       height: 100%;
 
       li {
-        // display: inline-block;
-        margin-left: 10px;
         text-align: center;
         margin: 20px 0;
         font-size: 1.5em;
@@ -97,13 +84,47 @@
     }
   }
 
+  // mobile + tablet
+  @media screen and (max-width: 768px) {
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: $background-color;
+    z-index: 200;
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.15);
+
+    .logo {
+      h1 {
+        font-size: 1.3em;
+
+        a {
+          color: $red;
+          @include animate("color");
+        }
+      }
+    }
+  }
+
+  // desktop
   @media screen and (min-width: 768px) {
+    width: 768px;
+    margin: 0 auto;
+
     .logo {
       margin: 20px 0;
     }
 
     .navbar {
-      display: block !important;
+      .navigation {
+        display: block;
+        position: initial;
+
+        li {
+          display: inline-block;
+          margin-left: 10px;
+          font-size: 1.0em;
+        }
+      }
 
       .hamburger {
         display: none;

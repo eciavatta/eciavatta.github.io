@@ -1,7 +1,8 @@
 {% include header.html %}
 
 <div class="page-content">
-    {{ content | markdownify }}
+  {% if page.image %}<img class="main-image" src="{{ "/assets/img/" | append: page.image | relative_url }}" />{% endif %}
+  {{ content | markdownify }}
 </div>
 
 {% include footer.html %}

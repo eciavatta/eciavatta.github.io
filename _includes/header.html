@@ -28,9 +28,9 @@
     <meta property="og:image" content="{{ user.avatar_url }}" />
     <meta property="og:description" content="{{ meta_description }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="{{ "/assets/styles.css" | relative_url }}" rel="stylesheet" type="text/css">
+    <link href="{{ "/assets/styles.css" | relative_url }}?v={{ "now" | date: "%s" }}" rel="stylesheet" type="text/css">
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-    <script src="{{ "/assets/js/script.js" | relative_url }}"></script>
+    <script src="{{ "/assets/js/script.js" | relative_url }}?v={{ "now" | date: "%s" }}"></script>
   </head>
   <body>
     <div class="page-container">
