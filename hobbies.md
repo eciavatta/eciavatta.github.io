@@ -2,6 +2,7 @@
 layout: page
 title: Hobbies
 image: hobbies.png
+image_alt: my shot of San Marino at night
 ---
 
 Besides computing and cybersecurity, I have several passions.

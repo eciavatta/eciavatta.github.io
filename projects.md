@@ -2,6 +2,7 @@
 layout: page
 title: Projects
 image: projects.png
+image_alt: a screenshot of caronte
 ---
 
 ### Caronte

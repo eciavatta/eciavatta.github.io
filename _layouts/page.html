@@ -2,7 +2,7 @@
 
 <div class="page-content">
   <h2 class="page-title">{{ page.title }}</h2>
-  {% if page.image %}<img class="main-image" src="{{ "/assets/img/" | append: page.image | relative_url }}" />{% endif %}
+  {% if page.image %}<img class="main-image" src="{{ "/assets/img/" | append: page.image | relative_url }}" alt="{{ page.image_alt }}" />{% endif %}
   {{ content | markdownify }}
 </div>
 
