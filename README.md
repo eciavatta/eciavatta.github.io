@@ -1,3 +1,3 @@
-# [eciavatta.it](https://eciavatta.it)
+# [eciavatta.dev](https://eciavatta.dev)
 
 My personal website
