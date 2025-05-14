@@ -17,8 +17,6 @@ I am passionate about journalism, both Italian and foreign. I'm not very good at
 
 I also like politics, I participate in discussion tables to improve my city, and I am a member of a political party.
 
-There are times when I spend a lot of time playing video games, I enjoy shooters.
-
 I like classical music and opera.
 
 I like trains.
